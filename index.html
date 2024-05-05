@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Cereal Are You?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@v0.162.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.162.0/examples/jsm/"
+          }
+        }
+      </script>
+</head>
+<body>
+    
+<div class="flex-container">
+
+    <div class="flex-items">
+        <h1> Which cereal are you based on your personality?</h1>
+       
+        <form id="personalityForm">
+            <label for="personality">Answer these 7 questions to find out!</label>
+            <fieldset>
+                <p>In a zombie apocalypse, would <br>you be:</p>
+                <label><input type="radio" name="question1" value="yes" /> the fearless hero leading the charge</label> <br>
+                <label><input type="radio" name="question1" value="no" /> the one accidentally tripping over <br>their own feet</label>
+            </fieldset>
+            <fieldset>
+                <p>When it comes to karaoke, are you<br> more likely to:</p>
+                <label><input type="radio" name="question2" value="yes" /> belt out a power ballad like "I Will <br>Always Love You"</label> <br>
+                <label><input type="radio" name="question2" value="no" /> rap along to "Baby Got Back"</label>
+            </fieldset>
+            <fieldset>
+                <p>What's your favorite way to spend a <br>Saturday night?</p>
+                <label><input type="radio" name="question3" value="yes" /> hitting the town with friends</label> <br>
+                <label><input type="radio" name="question3" value="no" /> staying in with a good book or movie</label>
+            </fieldset>
+            <fieldset>
+                <p>When it comes to fashion, are you more <br>likely to:</p>
+                <label><input type="radio" name="question4" value="yes" /> wear the latest trends</label> <br>
+                <label><input type="radio" name="question4" value="no" /> stick to classic styles</label>
+            </fieldset>
+            <fieldset>
+                <p>If you were a fruit, <br>would you be:</p>
+                <label><input type="radio" name="question5" value="yes" /> a smooth and suave pineapple</label> <br>
+                <label><input type="radio" name="question5" value="no" /> a quirky and colorful dragonfruit</label>
+            </fieldset>
+            <fieldset>
+                <p>If you could have any mythical <br>creature as a pet, what <br>would you choose?</p>
+                <label><input type="radio" name="question6" value="yes" /> a loyal and <br>majestic unicorn</label> <br>
+                <label><input type="radio" name="question6" value="no" /> a mischievous and adorable <br>baby dragon</label>  
+            </fieldset>
+            <fieldset> 
+                <p>What's your favorite type of weather?</p>
+                <label><input type="radio" name="question7" value="yes" /> a sunny day with <br>clear skies</label> <br>
+                <label><input type="radio" name="question7" value="no" /> a dramatic thunderstorm with <br>lightning bolts</label>
+            </fieldset>
+            <fieldset> 
+                <p>In a game of charades, <br> are you</p>
+                <label><input type="radio" name="question8" value="yes" /> the master mime <br>effortlessly acting out<br> the clues</label> <br>
+                <label><input type="radio" name="question8" value="no" /> the enthusiastic <br>guesser blurting out <br>random answers</label>
+            </fieldset>
+            <fieldset> 
+                <p>If you were standed on a <br>desert island with only a rubber chicken for company, would you engage in daily <br>conversations with it?</p>
+                <label><input type="radio" name="question9" value="yes" /> yes, duh! There's no one else to<br> hear me</label> <br>
+                <label><input type="radio" name="question9" value="no" /> no, I would rather write my feelings <br>in the sand</label>
+            </fieldset>
+            <fieldset>
+                <p>Do you prefer to eat <br> cereal with a spoon or with <br>your hands?</p>
+                <label><input type="radio" name="question11" value="yes" /> With a spoon, like <br>a civilized person</label> <br>
+                <label><input type="radio" name="question11" value="no" /> With my hands, because rules are meant to<br> be broken</label>
+            </fieldset>
+
+
+
+
+
+
+
+            </form>
+        
+        
+
+
+
+
+        <button id="cerealGenerator">CLICK HERE TO FIND OUT!</button>
+    </div>
+
+
+
+    <div class="flex-items">
+        <img id="breakfastImg" src="" alt="">
+        <h2 id="youAre"></h2>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+    
+
+    <script src="js/script.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

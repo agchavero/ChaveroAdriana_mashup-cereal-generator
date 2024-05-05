@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: none;
+}
+
+.flex-container{
+    position: absolute;
+        /* display: flex; */
+        width: 40%;
+        height: 80%;
+        padding: 10px;
+        overflow: auto;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        background-color: rgb(251, 237, 222, 0.7);
+        backdrop-filter: blur(5px);
+        /* row is default. column flips both axis */
+        flex-direction: column;
+        /* vv shifts items on main axis vv */
+        justify-content: space-around;
+         /* vv align items shift items on cross axis vv*/
+        align-items: center;
+        border-radius: 30px;
+    border: 15px ridge gold;
+        scrollbar-width: thin;
+}
+
+.flex-items{
+    /* width: 100%; */
+    height: fit-content;
+    margin:10px;
+    padding:20px;
+    background-color: rgb(255, 251, 241);
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+#placeHere{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    top: 30px;
+}
+
+
+h1,h2{
+    padding: 8px;
+    color: rgb(254, 142, 207);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#cerealGenerator{
+    /* position: relative; */
+    top: 60px;
+    padding: 9px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 142, 207);
+    text-align: center;
+    border: 4px dotted rgb(255, 255, 255);
+}
+
+#breakfastImg{
+    width: 35%;
+    padding: 5px;
+    margin: 5px;
+    border: 10px double rgba(252, 144, 214, 0.485);
+    border-radius: 20px;
+}
+
+fieldset{
+    top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 142, 207);
+    text-align: center;
+    border: 7px solid rgb(255, 251, 241);
+    
+}
