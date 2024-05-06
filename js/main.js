@@ -13,8 +13,10 @@ var scene = new THREE.Scene();
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(101,width/height,0.1,1000);
 camera.position.z = 0;
-camera.position.y = 20.5;
+camera.position.y = 21;
 camera.position.x = 0;
+
+
 
 
 
@@ -25,20 +27,6 @@ renderer.setClearColor("#141414");
 renderer.setSize(width, height);
 document.body.appendChild(renderer.domElement);
 
-
-//*****ADD PLANES******/
-// GROUND PLANE
-// const axesHelper = new THREE.AxesHelper( 5 );
-// scene.add( axesHelper );
-// const geometryPlane = new THREE.PlaneGeometry( 1, 1);
-// const materialPlane = new THREE.MeshLambertMaterial( {color: "#b0dbff", side: THREE.DoubleSide} );
-// const plane = new THREE.Mesh( geometryPlane, materialPlane);
-// scene.add( plane );
-
-// plane.rotation.x = THREE.MathUtils.degToRad(90);
-// plane.scale.x = 40;     
-// plane.scale.y = 40;
-// plane.scale.z = 1;
 
 
 
@@ -57,10 +45,13 @@ document.body.appendChild(renderer.domElement);
             cerealBowl.position.set(0,0,0);
             scene.add(cerealBowl);
 
+
         
         
         
         });
+
+
 
 //**********************L I G H T S**********************
 
@@ -68,7 +59,7 @@ document.body.appendChild(renderer.domElement);
 // 5: Add lighting to the scene
 // adding ambient light
 // second parameter is the intensity of the light
-var ambientLight = new THREE.AmbientLight(0xffffff,2);
+var ambientLight = new THREE.AmbientLight(0xffffff,2.8);
 scene.add(ambientLight);
 
 
@@ -78,7 +69,7 @@ scene.add(ambientLight);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableZoom = false;
 // controls.autoRotate = true;
-// controls.autoRotateSpeed = .5;
+// controls.autoRotateSpeed = 0.54
 
 
 // responsive window size
@@ -90,25 +81,18 @@ window.addEventListener('resize', () => {
 
 
 
-const clock = new THREE.Clock();
-
 
 // FINAL: Render the scene
 function animate(){
     requestAnimationFrame(animate);
 
     
-    // icosahedron.rotation.y += 0.01;
     cerealBowl.rotation.y += 0.001;
 
 
 
     controls.update();
 
-    // update mixer
-    if(mixer){
-        mixer.update(clock.getDelta());
-    }
 
     renderer.render(scene,camera);
 }

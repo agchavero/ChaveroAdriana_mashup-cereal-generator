@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Ojuju:wght@200..800&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +9,20 @@
 
 body{
     background-color: none;
+    font-family: 'truculenta', sans-serif;
 }
 
 .flex-container{
     position: absolute;
         /* display: flex; */
-        width: 40%;
+        width: 45%;
         height: 80%;
-        padding: 10px;
+        padding: 30px;
         overflow: auto;
-        top: 15%;
+        top: 19%;
         left: 50%;
         transform: translate(-50%, -15%);
-        background-color: rgb(251, 237, 222, 0.7);
+        background-color: rgba(155, 248, 255, 0.8);
         backdrop-filter: blur(5px);
         /* row is default. column flips both axis */
         flex-direction: column;
@@ -33,9 +38,11 @@ body{
 .flex-items{
     /* width: 100%; */
     height: fit-content;
+    align-items: center;
+    justify-content: center;
     margin:10px;
     padding:20px;
-    background-color: rgb(255, 251, 241);
+    background-color: rgb(241, 252, 255);
     text-align: center;
     border-radius: 20px;
     
@@ -50,23 +57,40 @@ body{
 }
 
 
-h1,h2{
+h1{
     padding: 8px;
     color: rgb(254, 142, 207);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
+    font-family: "Truculenta", sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+h3{
+    padding: 8px;
+    color: rgb(175, 114, 255);
+    font-size: 1.9rem;
+}
+
+p{
+    padding: 8px;
+    font-size: 2.3rem;
+    font-weight: 800;
 }
 
 #cerealGenerator{
     /* position: relative; */
     top: 60px;
-    padding: 9px;
+    padding: 10px;
     border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Truculenta', sans-serif;
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
-    background-color: rgb(254, 142, 207);
+    background-color: rgb(250, 131, 131);
     text-align: center;
-    border: 4px dotted rgb(255, 255, 255);
+    border: 8px dotted rgb(255, 255, 255);
 }
 
 #breakfastImg{
@@ -78,14 +102,21 @@ h1,h2{
 }
 
 fieldset{
-    top: 50px;
     padding: 15px;
     border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-family: "Truculenta", sans-serif;
+    font-size: 2.1rem;
     color: rgb(255, 255, 255);
     background-color: rgb(254, 142, 207);
     text-align: center;
     border: 7px solid rgb(255, 251, 241);
     
+}
+
+h2{
+    padding: 8px;
+    color: rgb(175, 114, 255);
+    font-family: "Truculenta", sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
 }

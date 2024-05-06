@@ -1,7 +1,7 @@
 // 1. create an array of 3 images
 
 let cereals = [
-    "media/images/applejacks.jpg",'media/images/cocoakrispies.jpg','media/images/frootloops.jpg','media/images/cheerios.jpg','media/images/frostedflakes.jpg','media/images/honeybunches.jpg','media/images/raisinbran.jpg', 'media/images/specialk.jpg'
+    "media/images/Apple Jacks.jpg",'media/images/Cocoa Krispies.jpg','media/images/Froot Loops.jpg','media/images/Cheerios.jpg','media/images/Frosted Flakes.jpg','media/images/Honey Bunches.jpg','media/images/Raisin Bran.jpg', 'media/images/Special K.jpg'
     ];
     
     console.log(cereals);
